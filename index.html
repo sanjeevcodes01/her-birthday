@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#24132f" />
+  <title>For Sonaji ❤️ | A Little Birthday Universe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <div class="floating-hearts" aria-hidden="true">♥　✦　♡　✧　♥　✦　♡</div>
+  <div id="petalLayer" aria-hidden="true"></div>
+  <audio id="birthdayMusic" loop preload="none"><source src="assets/darkhaast.mp3" type="audio/mpeg"></audio>
+
+  <main class="site-shell">
+    <header class="topbar">
+      <div class="brand">♡ A LITTLE UNIVERSE FOR YOU</div>
+      <div class="top-actions">
+        <button class="music-toggle" id="musicToggle" type="button">♫ Play Darkhaast</button>
+        <div class="music-note">Made with love, just for you ✨</div>
+      </div>
+    </header>
+
+    <section class="screen active" id="welcome">
+      <div class="hero-card">
+        <div class="eyebrow">A special day for a special person</div>
+        <div class="moon">🌙</div>
+        <h1>Happy Birthday,<br><span class="script">Meri Sonaji</span> <span class="heart">♥</span></h1>
+        <p class="lead">Aapke liye kuch chhoti-chhoti surprises… har click ke saath ek nayi baat, ek nayi feeling. 💌</p>
+        <div class="name-line">Meri Jaanji • Meri Bachcha • My Favourite Person</div>
+        <button class="primary-btn" data-next="balloons">Chaliye, surprise shuru karein ✨ <span>→</span></button>
+        <p class="tiny-note">Headphones optional. Smile compulsory. 😊</p>
+      </div>
+    </section>
+
+    <section class="screen" id="balloons">
+      <div class="section-card">
+        <div class="eyebrow">Surprise 01 / 07</div>
+        <h2>Aapke liye khushiyon ke balloons 🎈</h2>
+        <p class="section-intro">Har balloon mein ek wish chhupi hai. Unhe tap karke phodiye!</p>
+        <div class="balloon-area" id="balloonArea">
+          <button class="balloon b1" data-message="Aapki har subah umeed se aur har shaam sukoon se bhari ho. 💗" aria-label="Pop pink balloon">♥</button>
+          <button class="balloon b2" data-message="Aapke saare sapne dheere-dheere sach hon, aur aapko khud par hamesha garv ho. ✨" aria-label="Pop purple balloon">✦</button>
+          <button class="balloon b3" data-message="Aapki smile hamesha aise hi chamakti rahe. Aap khush rahein, bas yahi dua hai. 🌷" aria-label="Pop yellow balloon">♡</button>
+          <button class="balloon b4" data-message="Zindagi aapko utni hi khoobsurti lautaye jitni khoobsurti aap dusron ki life mein laati hain. 💫" aria-label="Pop blue balloon">✧</button>
+          <button class="balloon b5" data-message="Aapko pyaar ke saath respect, apne sapnon ke liye himmat aur har din ek nayi wajah mile muskurane ki. ❤️" aria-label="Pop red balloon">♥</button>
+        </div>
+        <div class="message-bubble" id="balloonMessage" aria-live="polite">Kisi balloon ko tap kijiye… 🎈</div>
+        <div class="progress-line"><span id="balloonProgress"></span></div>
+        <button class="primary-btn" data-next="letter">Agla surprise kholiye 💌 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="letter">
+      <div class="section-card letter-card">
+        <div class="eyebrow">Surprise 02 / 07</div>
+        <div class="envelope">💌</div>
+        <h2>Aapke naam ek dil ki baat</h2>
+        <div class="letter-text">
+          <p>Meri Sonaji,</p>
+          <p>Aap meri life mein ek bahut special jagah rakhti hain. Aapki khushi, aapki feelings, aapki respect aur aapke dreams mere liye important hain.</p>
+          <p>Main yeh nahi kahunga ki har din perfect hoga. Lekin main itna zaroor chahta hoon ki hum mushkil waqt mein bhi ek-dusre ko samajhne ki koshish karein, galti ho toh use sudhaarein aur ek-dusre ki izzat kabhi kam na hone dein.</p>
+          <p>Main aapke saath aage badhne, achhi memories banane aur life ke har phase mein aapka support banne ki koshish karna chahta hoon. Aapki apni pehchaan aur aapke sapne hamesha important rahenge.</p>
+          <p class="signature">Bahut saara pyaar aur respect,<br>Aapka ❤️</p>
+        </div>
+        <button class="primary-btn" data-next="shayari">Ab ek shayari ho jaaye 🌹 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="shayari">
+      <div class="section-card poetry-card">
+        <div class="eyebrow">Surprise 03 / 07</div>
+        <div class="flower">🌹</div>
+        <h2>Aapke liye kuch alfaaz</h2>
+        <blockquote>
+          Aapki hansi se din mein roshni si aa jaati hai,<br>
+          Aapki baaton se dil ko khushi mil jaati hai.<br>
+          Dua hai har raasta aapka aasaan ho,<br>
+          Aapki duniya khushiyon se mehakti jaaye,<br>
+          Aur har khwaab aapka ek din haqeeqat ban jaaye. ✨
+        </blockquote>
+        <div class="quote-divider">✦ ✧ ✦</div>
+        <p class="deep-line">“Mohabbat sirf saath rehne ka naam nahi; ek-dusre ke sapnon ko jagah dena, izzat karna aur mushkil waqt mein samajhne ki koshish karna bhi mohabbat hai.”</p>
+        <button class="primary-btn" data-next="beauty">Ab aapki tareef toh banti hai 🌷 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="beauty">
+      <div class="section-card beauty-card">
+        <div class="eyebrow">Surprise 04 / 07</div>
+        <h2>Aapki khoobsurati… sirf chehre tak nahi 🌷</h2>
+        <div class="beauty-grid">
+          <div class="beauty-item"><span>👀</span><h3>Aapki aankhein</h3><p>Aapki aankhon mein jo expressions hain, woh kabhi-kabhi bina kuch kahe bhi bahut kuch keh jaate hain.</p></div>
+          <div class="beauty-item"><span>🌸</span><h3>Aapke baal</h3><p>Aapke baal aapki personality ko ek alag si grace dete hain—aur aapka apna style aapko aur special banata hai.</p></div>
+          <div class="beauty-item"><span>✨</span><h3>Aapki smile</h3><p>Aapki smile ki baat hi alag hai. Dua hai aapko muskurane ki wajah hamesha milti rahe.</p></div>
+          <div class="beauty-item"><span>💗</span><h3>Aapka dil</h3><p>Aapki feelings, aapki soch aur aapka apna andaaz—yeh sab milkar aapko mere liye khaas banate hain.</p></div>
+        </div>
+        <p class="gentle-note">Aap khoobsurat hain apne tareeke se—aur aapki value sirf looks se kahin zyada hai. ❤️</p>
+        <button class="primary-btn" data-next="photos">Hamari yaadon ka kona 📸 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="photos">
+      <div class="section-card">
+        <div class="eyebrow">Surprise 05 / 07</div>
+        <h2>Hamari yaadon ka chhota sa album 📸</h2>
+        <p class="section-intro">Aapki do pyaari tasveerein—har photo par tap kijiye aur use bade frame mein dekhiye. ❤️</p>
+        <div class="photo-grid fixed-photo-grid">
+          <button class="photo-slot photo-button" type="button" data-photo="assets/photo1.jpg" aria-label="Pehli photo bade size mein dekhein">
+            <img src="assets/photo1.jpg" alt="Sonaji ki pehli special photo" />
+            <span class="photo-caption">Aapki pyaari si smile 🌸</span>
+          </button>
+          <button class="photo-slot photo-button" type="button" data-photo="assets/photo2.jpg" aria-label="Doosri photo bade size mein dekhein">
+            <img src="assets/photo2.jpg" alt="Sonaji ki doosri special photo" />
+            <span class="photo-caption">Aapka graceful andaaz ✨</span>
+          </button>
+        </div>
+        <p class="tiny-note">Photo album isi surprise page par hai. Kisi photo par tap karne se woh full-screen mein khulegi. 📸</p>
+        <div class="memory-note">“Kuch yaadein photos mein hoti hain, aur kuch dil mein. Aapke saath judi achhi yaadein mere liye hamesha special rahengi.” ❤️</div>
+        <button class="primary-btn" data-next="cake">Ab birthday cake ka time 🎂 <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="cake">
+      <div class="section-card cake-card">
+        <div class="eyebrow">Surprise 06 / 07</div>
+        <h2>Aapka virtual birthday cake 🎂</h2>
+        <p class="section-intro">Pehle candles bujhaiye, phir cake cut kijiye. ✨</p>
+        <div class="cake-scene">
+          <div class="candles" id="candles">
+            <button class="candle" aria-label="Blow out candle 1"><span class="flame"></span></button>
+            <button class="candle" aria-label="Blow out candle 2"><span class="flame"></span></button>
+            <button class="candle" aria-label="Blow out candle 3"><span class="flame"></span></button>
+          </div>
+          <div class="cake-top"></div>
+          <div class="cake-body"><span>Happy Birthday</span><b>♥</b></div>
+          <div class="cake-plate"></div>
+        </div>
+        <p id="cakeStatus" class="message-bubble">Har candle par tap karke wish maangiye. 🕯️</p>
+        <button class="secondary-btn" id="cutCake">🔪 Cake cut karein</button>
+        <div id="cakeCelebration" class="celebration hidden">🎉 HAPPY BIRTHDAY, SONAJI! 🎉<br><span>Aapki life mithaas aur khushiyon se bhari rahe. ❤️</span></div>
+        <button class="primary-btn" data-next="promise">Aakhri surprise… ❤️ <span>→</span></button>
+      </div>
+    </section>
+
+    <section class="screen" id="promise">
+      <div class="section-card final-card">
+        <div class="eyebrow">Surprise 07 / 07</div>
+        <div class="final-heart">❤️</div>
+        <h2>Ek vaada, dil se</h2>
+        <p class="final-poem">Main vaada nahi karunga ki zindagi mein kabhi mushkilein nahi aayengi,<br>
+        par itni koshish zaroor karunga ki hum unhe samajhdaari se suljha paayein.<br><br>
+        Aapke sapnon ki izzat karunga,<br>
+        aapki baat ko samajhne ki koshish karunga,<br>
+        aur apne pyaar ko sirf lafzon se nahi,<br>
+        apne behaviour aur actions se bhi dikhane ki koshish karunga. ❤️</p>
+        <p class="deep-line">“Hamesha saath rehne ka sabse khoobsurat vaada yeh hai ki hum har din ek-dusre ko choose karein—respect, honesty aur care ke saath.”</p>
+        <div class="final-wish">Happy Birthday, meri Sonaji. 🎂<br>Aapki khushiyan hamesha badhti rahein. ❤️</div>
+        <button class="primary-btn" id="restart">Surprises dobara dekhein ↻</button>
+        <p class="tiny-note">Made especially for you, with love and respect. 💌</p>
+      </div>
+    </section>
+
+    <footer>Made with ♡ • A little birthday universe</footer>
+  </main>
+  <div id="confettiLayer" aria-hidden="true"></div>
+  <div class="lightbox hidden" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
+    <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Photo band karein">×</button>
+    <img id="lightboxImage" src="" alt="Badi photo" />
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
