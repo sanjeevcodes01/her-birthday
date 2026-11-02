@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,7 +12,10 @@
   <div class="stars" aria-hidden="true"></div>
   <div class="floating-hearts" aria-hidden="true">♥　✦　♡　✧　♥　✦　♡</div>
   <div id="petalLayer" aria-hidden="true"></div>
-  <audio id="birthdayMusic" loop preload="none"><source src="assets/darkhaast.mp3" type="audio/mpeg"></audio>
+
+  <audio id="birthdayMusic" loop preload="none">
+    <source src="darkhaast.mp3" type="audio/mpeg">
+  </audio>
 
   <main class="site-shell">
     <header class="topbar">
@@ -107,12 +111,12 @@
         <h2>Hamari yaadon ka chhota sa album 📸</h2>
         <p class="section-intro">Aapki do pyaari tasveerein—har photo par tap kijiye aur use bade frame mein dekhiye. ❤️</p>
         <div class="photo-grid fixed-photo-grid">
-          <button class="photo-slot photo-button" type="button" data-photo="assets/photo1.jpg" aria-label="Pehli photo bade size mein dekhein">
-            <img src="assets/photo1.jpg" alt="Sonaji ki pehli special photo" />
+          <button class="photo-slot photo-button" type="button" data-photo="photo1.jpg" aria-label="Pehli photo bade size mein dekhein">
+            <img src="photo1.jpg" alt="Sonaji ki pehli special photo" />
             <span class="photo-caption">Aapki pyaari si smile 🌸</span>
           </button>
-          <button class="photo-slot photo-button" type="button" data-photo="assets/photo2.jpg" aria-label="Doosri photo bade size mein dekhein">
-            <img src="assets/photo2.jpg" alt="Sonaji ki doosri special photo" />
+          <button class="photo-slot photo-button" type="button" data-photo="photo2.jpg" aria-label="Doosri photo bade size mein dekhein">
+            <img src="photo2.jpg" alt="Sonaji ki doosri special photo" />
             <span class="photo-caption">Aapka graceful andaaz ✨</span>
           </button>
         </div>
@@ -164,11 +168,14 @@
 
     <footer>Made with ♡ • A little birthday universe</footer>
   </main>
+
   <div id="confettiLayer" aria-hidden="true"></div>
+
   <div class="lightbox hidden" id="photoLightbox" role="dialog" aria-modal="true" aria-label="Photo preview">
     <button class="lightbox-close" id="closeLightbox" type="button" aria-label="Photo band karein">×</button>
     <img id="lightboxImage" src="" alt="Badi photo" />
   </div>
+
   <script src="script.js"></script>
 </body>
 </html>
